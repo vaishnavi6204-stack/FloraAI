@@ -54,6 +54,6 @@ Building Floral Charm strengthened my understanding of how JavaScript interacts 
 
 ## 👩‍💻 Developer
 
-Made with passion and curiosity by Vaishnavi
+Made with passion and curiosity 
 
 *"Turning code into petals, one line at a time."*
