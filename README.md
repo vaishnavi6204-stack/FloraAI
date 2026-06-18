@@ -1,4 +1,4 @@
-# Floral Charm 🌸
+# FloraAI
 
 A flower shop e-commerce site built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Includes a working cart system and an AI shopping assistant, Flora, powered by the Claude API.
 
