@@ -3,61 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Flower Shop</title>
+  <title>Floral Charm</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <h1 class="logo"> Floral Charm</h1>
-      <ul class="nav-links">
+    <nav>
+      <a href="#home" class="brand">Floral Charm</a>
+
+      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
+        <li><a href="#flora-ai">Flora AI</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+
+      <button id="cartBtn">
+        🛒 Cart <span id="cartCount">0</span>
+      </button>
     </nav>
   </header>
-  <section id="home" class="flower">
+
+
+  <section id="home" class="hero">
+    <img src="C:\Users\riyap\Downloads\hero-lily.jpg.jpeg" alt="Pale pink lily in soft natural light" />
+    <div class="hero-overlay"></div>
     <div class="hero-text">
-      <h2>Fresh Flowers Delivered Daily</h2>
-      <p>Brighten someone's day with beautiful blooms </p>
-      <a href="#shop" class="btn">Shop Now</a>
+      <p class="small-label">Flora Collection — 2026</p>
+      <h1>Choose Your<br><em>Significant</em><br>Style</h1>
+      <a href="#shop" class="shop-link">Shop All</a>
+    </div>
+    <span class="collection-tag">Floral Charm Collection</span>
+  </section>
+
+
+  <section id="shop">
+    <div class="shop-heading">
+      <span>Handpicked for you</span>
+      <h2>New Arrivals</h2>
+      <div class="line"></div>
+    </div>
+    <div class="cards" id="productGrid"></div>
+  </section>
+
+
+  <!-- this is the main feature section, took me a while to figure out the layout -->
+  <section id="flora-ai">
+    <div class="bg-blur"></div>
+
+    <div class="ai-layout">
+
+      <div class="ai-intro">
+        <span class="tag">Powered by AI</span>
+        <h2>Meet <em>Flora</em>,<br>your personal<br>floral guide</h2>
+        <p>Not sure what to send? Just tell Flora the occasion, the person, or your budget. She'll suggest the right bouquet — and even write a card message if you need one.</p>
+
+        <ul class="feature-list">
+          <li>
+            <div class="icon-box">🎁</div>
+            <div>
+              <strong>Gift Finder</strong>
+              <span>Describe who it's for — Flora picks the right bouquet</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">✍️</div>
+            <div>
+              <strong>Card Message Writer</strong>
+              <span>A real message, not a template — written for your occasion</span>
+            </div>
+          </li>
+          <li>
+            <div class="icon-box">💬</div>
+            <div>
+              <strong>Order Support</strong>
+              <span>Delivery, returns, custom orders — just ask</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="chat-box">
+        <div class="chat-header">
+          <div class="flora-avatar">🌸</div>
+          <div class="flora-info">
+            <strong>Flora</strong>
+            <span>Floral Charm Assistant</span>
+          </div>
+          <div class="green-dot"></div>
+        </div>
+
+        <div class="quick-options">
+          <button data-msg="I need a birthday gift under ₹500">🎂 Birthday under ₹500</button>
+          <button data-msg="Suggest something for an anniversary">💍 Anniversary</button>
+          <button data-msg="Write a card message for a birthday bouquet">✍️ Card message</button>
+          <button data-msg="What is your delivery policy?">🚚 Delivery info</button>
+        </div>
+
+        <div class="messages" id="msgContainer">
+          <div class="msg flora">
+            <div class="dot">🌸</div>
+            <div class="text">Hi! I'm Flora. Tell me the occasion or the person you're buying for and I'll find the perfect bouquet. I can also write a card message that actually sounds like you.</div>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <input type="text" id="userInput" placeholder="Ask me anything about flowers…" />
+          <button id="sendMsg">➤</button>
+        </div>
+      </div>
+
     </div>
   </section>
-  <section id="shop" class="shop">
-    <h2>Our Bouquets</h2>
-    <div class="products" id="productContainer"></div>
-  </section>
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>
-      we craft elegant floral arrangements designed to celebrate life’s most meaningful moments. Using only the freshest blooms, each bouquet is thoughtfully created with timeless style and attention to detail. Our mission is simple — to deliver beauty, sophistication, and a touch of luxury with every flower we send. 
-  </section>
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
+
+  <section id="contact">
+    <div class="contact-info">
+      <h2>Let's talk<br>flowers</h2>
+      <p>Need a custom arrangement, have a question about your order, or just want to say hello — we're here and we actually reply.</p>
+      <div class="details">
+        <span>📍 Delhi, India</span>
+        <span>✉️ hello@floralcharm.in</span>
+      </div>
+    </div>
+
     <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message"></textarea>
-      <br>
+      <input type="text" placeholder="Your name" required />
+      <input type="email" placeholder="Your email" required />
+      <textarea placeholder="Tell us what you need"></textarea>
       <button type="submit">Send Message</button>
     </form>
   </section>
-  <!-- Cart Modal -->
-  <div id="cartModal" class="modal hidden">
-    <div class="modal-content">
-      <span id="closeCart">&times;</span>
-      <h2>Your Cart</h2>
-      <ul id="cartItems"></ul>
-      <h3>Total: ₹<span id="totalPrice">0</span></h3>
-    </div>
-  </div>
 
   <footer>
-    <p>© 2026 Floral Charm Flower Shop</p>
+    <span>© 2026 Floral Charm</span>
+    <span>Made with care in India 🌸</span>
   </footer>
+
+
+  <!-- cart slides in from the right -->
+  <div class="cart-bg" id="cartBg">
+    <div class="cart-panel">
+      <div class="cart-top">
+        <h2>Your Cart</h2>
+        <button id="closeCart">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-bottom">
+        <div class="total-row">
+          <span>Total</span>
+          <span>₹<span id="cartTotal">0</span></span>
+        </div>
+        <button class="buy-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
