@@ -56,4 +56,4 @@ The Flora AI chat currently calls the Anthropic API directly from the browser. T
 
 **Vaishnavi**
 GitHub: [vaishnavi6204-stack](https://github.com/vaishnavi6204-stack)
-Email: vaishnavi6204@gmail.com
+
