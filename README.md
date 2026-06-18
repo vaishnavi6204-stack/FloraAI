@@ -1,59 +1,59 @@
-# 🌷 Floral Charm
+# Floral Charm 🌸
 
-*"Every bouquet tells a story. This website helps deliver that story digitally."*
+A flower shop e-commerce site built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Includes a working cart system and an AI shopping assistant, Flora, powered by the Claude API.
 
-Floral Charm is a modern flower shop landing page built with HTML, CSS, and JavaScript. The project recreates the experience of browsing a boutique flower store, allowing users to explore floral collections, add bouquets to a cart, and enjoy a clean shopping experience.
+**Live demo:** _add your GitHub Pages / hosting link here_
 
-## 🌸 Inspiration
+---
 
-Flowers are often chosen for life's most meaningful moments, birthdays, celebrations, apologies, and surprises. This project was created to combine elegant design with interactive web development fundamentals.
+## Features
 
-## ✨ What Makes This Project Special?
+- **Product catalog** — 8 flower types with add-to-cart functionality
+- **Cart drawer** — slide-in panel showing items and running total
+- **Flora AI assistant** — chat-based gift finder and card message writer, with quick-reply buttons for common requests
+- **Contact form** — front-end validated enquiry form
+- **Fully responsive** — adapts down to mobile breakpoints
 
-🌹 Dynamic product rendering using JavaScript
+## Tech Stack
 
-🛒 Interactive shopping cart with real-time updates
+- HTML5
+- CSS3 (custom properties, grid, flexbox, no framework)
+- Vanilla JavaScript (no jQuery, no React)
+- Anthropic Claude API (for the Flora chat assistant)
 
-🎨 Elegant floral-themed UI design
+## Project Structure
 
-📱 Responsive layout for different screen sizes
+```
+floral-charm/
+├── index.html        # Markup for all sections
+├── style.css          # All styling, including responsive breakpoints
+├── script.js           # Cart logic, product rendering, Flora chat logic
+└── *.jpg                # Product and background images (must stay in root)
+```
 
-📩 Contact section for customer interaction
+## Running Locally
 
-## 🧠 Skills Demonstrated
+1. Clone or download this repository.
+2. Keep all image files in the same folder as `index.html` — the code references them by filename, not by path.
+3. Open `index.html` directly in a browser.
 
-* DOM Manipulation
-* Event Handling
-* Dynamic Content Rendering
-* Responsive Web Design
-* CSS Layouts (Flexbox & Grid)
-* JavaScript Arrays and Objects
+No build step, no dependencies to install.
 
-## 🔧 Built With
+## Known Limitation
 
-| Technology | Purpose          |
-| ---------- | ---------------- |
-| HTML5      | Structure        |
-| CSS3       | Styling & Layout |
-| JavaScript | Interactivity    |
+The Flora AI chat currently calls the Anthropic API directly from the browser. This works in environments where the request is proxied with a key, but it will not work as a standalone deployed site — browsers block direct cross-origin calls like this, and no API key ships with the front-end (intentionally, since it should never be exposed client-side).
 
-## 🚀 Future Vision
+**To make Flora functional in production:** add a small backend (Node/Express, a Cloudflare Worker, or similar) that holds the API key server-side and relays requests from the front-end.
 
-This project can evolve into a complete e-commerce platform by adding:
+## Future Improvements
 
-* User Authentication
-* Wishlist Feature
-* Online Payments
-* Order Tracking
-* Backend Integration
-* Database Support
+- Backend proxy for the Flora AI assistant (see above)
+- Persist cart state across page reloads
+- Checkout flow with real payment integration
+- Filter/sort options on the product grid
 
-## 🌼 Lessons Learned
+## Author
 
-Building Floral Charm strengthened my understanding of how JavaScript interacts with HTML elements to create dynamic user experiences. It also improved my ability to structure responsive layouts and manage application state using arrays and objects.
-
-## 👩‍💻 Developer
-
-Made with passion and curiosity 
-
-*"Turning code into petals, one line at a time."*
+**Vaishnavi**
+GitHub: [vaishnavi6204-stack](https://github.com/vaishnavi6204-stack)
+Email: vaishnavi6204@gmail.com
