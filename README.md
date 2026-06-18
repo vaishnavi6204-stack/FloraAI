@@ -2,8 +2,6 @@
 
 A flower shop e-commerce site built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Includes a working cart system and an AI shopping assistant, Flora, powered by the Claude API.
 
-**Live demo:** _add your GitHub Pages / hosting link here_
-
 ---
 
 ## Features
@@ -18,8 +16,9 @@ A flower shop e-commerce site built with vanilla HTML, CSS, and JavaScript — n
 
 - HTML5
 - CSS3 (custom properties, grid, flexbox, no framework)
-- Vanilla JavaScript (no jQuery, no React)
+- JavaScript(Vanilla JS)
 - Anthropic Claude API (for the Flora chat assistant)
+- Responsive Web Design
 
 ## Project Structure
 
@@ -30,20 +29,12 @@ floral-charm/
 ├── script.js           # Cart logic, product rendering, Flora chat logic
 └── *.jpg                # Product and background images (must stay in root)
 ```
+## What I Learned
 
-## Running Locally
-
-1. Clone or download this repository.
-2. Keep all image files in the same folder as `index.html` — the code references them by filename, not by path.
-3. Open `index.html` directly in a browser.
-
-No build step, no dependencies to install.
-
-## Known Limitation
-
-The Flora AI chat currently calls the Anthropic API directly from the browser. This works in environments where the request is proxied with a key, but it will not work as a standalone deployed site — browsers block direct cross-origin calls like this, and no API key ships with the front-end (intentionally, since it should never be exposed client-side).
-
-**To make Flora functional in production:** add a small backend (Node/Express, a Cloudflare Worker, or similar) that holds the API key server-side and relays requests from the front-end.
+- Responsive web developement
+- DOM manipulation using JavaScript
+- Cart management logic
+- Prompt design for AI interections
 
 ## Future Improvements
 
@@ -55,5 +46,6 @@ The Flora AI chat currently calls the Anthropic API directly from the browser. T
 ## Author
 
 **Vaishnavi**
+
 GitHub: [vaishnavi6204-stack](https://github.com/vaishnavi6204-stack)
 
