@@ -37,7 +37,7 @@ const items = [
   },
   {
     id: 6,
-    name: "Coral Tulip Pair",
+    name: "Coral Tulip",
     price: 429,
     img: "Assets/coral-tulip.jpg",
     tags: "spring cheerful birthday warm under 500"
@@ -57,11 +57,8 @@ const items = [
     tags: "elegant delicate romantic single stem sophisticated"
   }
 ];
-
-// thought about adding a "best seller" tag here at some point, never got to it
 let cart = [];
-let cartOpenCount = 0; // wanted to track how often people check the cart, never hooked this up
-
+let cartOpenCount = 0;
 const grid = document.getElementById("productGrid");
 
 items.forEach(item => {
