@@ -159,7 +159,7 @@ nav ul a:hover {
   text-transform: uppercase;
 }
 
-/* shop section - might add filters later */
+/* shop section */
 #shop {
   padding: 0 52px 90px;
 }
@@ -262,7 +262,7 @@ nav ul a:hover {
   background: #7d3b5e;
 }
 
-/* flora ai section - the main feature, dark theme so it stands out from the rest of the page */
+/* flora ai section */
 #flora-ai {
   background: #1c1c1c;
   position: relative;
