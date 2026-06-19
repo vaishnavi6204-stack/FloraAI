@@ -759,3 +759,22 @@ footer {
 .buy-btn:hover {
   background: #7d3b5e;
 }
+
+@media (max-width: 880px) {
+  nav { padding: 14px 20px; }
+  nav ul { display: none; }
+  #shop { padding: 0 16px 60px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .hero-text { left: 26px; bottom: 50px; }
+  .hero-text h1 { font-size: 52px; }
+  .ai-layout { grid-template-columns: 1fr; }
+  .ai-intro { padding: 50px 24px 38px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.07); }
+  .ai-intro h2 { font-size: 36px; }
+  .chat-box { padding: 30px 20px 44px; }
+  #about { grid-template-columns: 1fr; }
+  .about-img { height: 280px; }
+  .about-words { padding: 44px 24px; }
+  #contact { grid-template-columns: 1fr; padding: 52px 20px; gap: 40px; }
+  footer { flex-direction: column; gap: 8px; text-align: center; padding: 22px; }
+  .cart-panel { width: 100%; }
+}
