@@ -1,51 +1,52 @@
-# FloraAI
+# 🌸 Floral Charm
 
-A flower shop e-commerce site built with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools. Includes a working cart system and an AI shopping assistant, Flora, powered by the Claude API.
+A minimal, elegant front-end website for a boutique flower shop. Built with plain HTML, CSS, and JavaScript — no frameworks.
 
----
+## ✨ Features
 
-## Features
+- **Sticky navigation** with smooth scroll to sections
+- **Hero section** with overlay and call-to-action
+- **Dynamic product grid** rendered from a JS array (8 bouquets)
+- **Add-to-cart** functionality with live item count
+- **Slide-in cart panel** showing items, total, and checkout button
+- **About & Contact sections** with a working contact form (front-end only)
+- **Responsive design** for mobile screens (≤880px)
 
-- **Product catalog** — 8 flower types with add-to-cart functionality
-- **Cart drawer** — slide-in panel showing items and running total
-- **Flora AI assistant** — chat-based gift finder and card message writer, with quick-reply buttons for common requests
-- **Contact form** — front-end validated enquiry form
-- **Fully responsive** — adapts down to mobile breakpoints
-
-## Tech Stack
+## 🛠️ Tech Stack
 
 - HTML5
-- CSS3 (custom properties, grid, flexbox, no framework)
-- JavaScript(Vanilla JS)
-- Anthropic Claude API (for the Flora chat assistant)
-- Responsive Web Design
+- CSS3 (Grid, Flexbox, custom properties)
+- Vanilla JavaScript (DOM manipulation)
+- Google Fonts — *Cormorant Garamond* & *DM Sans*
 
-## Project Structure
+## 📁 Project Structure
+loral-charm/ ├── index.html ├── style.css ├── script.js └── Assets/ (all images go here)
 
-```
-floral-charm/
-├── index.html        # Markup for all sections
-├── style.css          # All styling, including responsive breakpoints
-├── script.js           # Cart logic, product rendering, Flora chat logic
-└── *.jpg                # Product and background images (must stay in root)
-```
-## What I Learned
+## 🚀 Getting Started
 
-- Responsive web developement
-- DOM manipulation using JavaScript
-- Cart management logic
-- Prompt design for AI interections
+1. Clone or download this repository.
+2. Make sure all images are inside the `Assets/` folder.
+3. Open `index.html` in your browser — that's it!
 
-## Future Improvements
-
-- Backend proxy for the Flora AI assistant (see above)
-- Persist cart state across page reloads
-- Checkout flow with real payment integration
-- Filter/sort options on the product grid
-
-## Author
-
-**Vaishnavi**
-
-GitHub: [vaishnavi6204-stack](https://github.com/vaishnavi6204-stack)
-
+```bash
+git clone <your-repo-url>
+cd floral-charm
+open index.html
+🎨 Design Notes
+•
+Color palette: warm cream (#faf8f5), plum accent (#7d3b5e), deep charcoal (#1c1c1c)
+•
+Typography: Cormorant Garamond for headings, DM Sans for body
+•
+Aesthetic: editorial, minimal, with generous whitespace
+📌 Future Improvements
+•
+Quantity adjustment & remove-item in cart
+•
+Persist cart with localStorage
+•
+Real backend for the contact form
+•
+Product filtering by tags
+👩‍💻 Author
+Made with care by Vaishnavi in India 🌸
