@@ -17,7 +17,6 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
-        <li><a href="#flora-ai">Flora AI</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -50,73 +49,21 @@
     <div class="cards" id="productGrid"></div>
   </section>
 
-
-  <!-- this is the main feature section, took me a while to figure out the layout -->
-  <section id="flora-ai">
-    <div class="bg-blur"></div>
-
-    <div class="ai-layout">
-
-      <div class="ai-intro">
-        <span class="tag">Powered by AI</span>
-        <h2>Meet <em>Flora</em>,<br>your personal<br>floral guide</h2>
-        <p>Not sure what to send? Just tell Flora the occasion, the person, or your budget. She'll suggest the right bouquet — and even write a card message if you need one.</p>
-
-        <ul class="feature-list">
-          <li>
-            <div class="icon-box">🎁</div>
-            <div>
-              <strong>Gift Finder</strong>
-              <span>Describe who it's for — Flora picks the right bouquet</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon-box">✍️</div>
-            <div>
-              <strong>Card Message Writer</strong>
-              <span>A real message, not a template — written for your occasion</span>
-            </div>
-          </li>
-          <li>
-            <div class="icon-box">💬</div>
-            <div>
-              <strong>Order Support</strong>
-              <span>Delivery, returns, custom orders — just ask</span>
-            </div>
-          </li>
-        </ul>
+  <section id="about">
+    <div class="about-visual">
+      <img src="Assets/about .jpg" alt="Close-up of a plum calla lily" />
+      <span class="about-stamp">Est. 2026 — New&nbsp;Delhi</span>
+    </div>
+    <div class="about-words">
+      <span class="eyebrow">The shop</span>
+      <h2>Fewer stems,<br><em>better</em><br>chosen.</h2>
+      <p>We keep the range small on purpose. Every arrangement here is something we'd actually want to receive — not padded out for the sake of more choice.</p>
+      <p>Each bouquet is built around one or two flowers doing the work, not a dozen fighting for attention. If it looks simple, that's deliberate.</p>
+      <div class="about-details">
+        <span>Small batches</span>
+        <span>Considered pairings</span>
+        <span>No filler stems</span>
       </div>
-
-      <div class="chat-box">
-        <div class="chat-header">
-          <div class="flora-avatar">🌸</div>
-          <div class="flora-info">
-            <strong>Flora</strong>
-            <span>Floral Charm Assistant</span>
-          </div>
-          <div class="green-dot"></div>
-        </div>
-
-        <div class="quick-options">
-          <button data-msg="I need a birthday gift under ₹500">🎂 Birthday under ₹500</button>
-          <button data-msg="Suggest something for an anniversary">💍 Anniversary</button>
-          <button data-msg="Write a card message for a birthday bouquet">✍️ Card message</button>
-          <button data-msg="What is your delivery policy?">🚚 Delivery info</button>
-        </div>
-
-        <div class="messages" id="msgContainer">
-          <div class="msg flora">
-            <div class="dot">🌸</div>
-            <div class="text">Hi! I'm Flora. Tell me the occasion or the person you're buying for and I'll find the perfect bouquet. I can also write a card message that actually sounds like you.</div>
-          </div>
-        </div>
-
-        <div class="input-row">
-          <input type="text" id="userInput" placeholder="Ask me anything about flowers…" />
-          <button id="sendMsg">➤</button>
-        </div>
-      </div>
-
     </div>
   </section>
 
