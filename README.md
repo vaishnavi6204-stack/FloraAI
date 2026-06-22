@@ -32,16 +32,16 @@ Done!
 
 ## Design Notes
 
-•Color palette: warm cream (#faf8f5), plum accent (#7d3b5e), deep charcoal (#1c1c1c)
-•Typography: Cormorant Garamond for headings, DM Sans for body
-•Aesthetic: editorial, minimal, with generous whitespace
+- Color palette: warm cream (#faf8f5), plum accent (#7d3b5e), deep charcoal (#1c1c1c)
+- Typography: Cormorant Garamond for headings, DM Sans for body
+- Aesthetic: editorial, minimal, with generous whitespace
 
 ## Future Improvements
 
-•Quantity adjustment & remove-item in cart
-•Persist cart with localStorage
-•Real backend for the contact form
-•Product filtering by tags
-
+- Quantity adjustment & remove-item in cart
+- Real backend for the contact form
+- Product filtering by tags
+- Wishlist
+  
 ## Author
 Made with care by Vaishnavi in India 
